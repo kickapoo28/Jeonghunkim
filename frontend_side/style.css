@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+.page {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Banner Container ── */
+.banner {
+  background: #ffffff;
+  border: 2.5px solid #222;
+  width: 100%;
+  max-width: 960px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ── Title ── */
+.banner-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  padding: 22px 30px 18px;
+  border-bottom: 2px solid #222;
+  color: #111;
+}
+
+/* ── Body: 3-column grid ── */
+.banner-body {
+  display: grid;
+  grid-template-columns: 1fr 180px 1fr;
+  align-items: center;
+  padding: 24px 30px;
+  gap: 16px;
+  min-height: 180px;
+}
+
+/* ── Left Column ── */
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date-venue {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.group {
+  font-size: 0.97rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+.group-num {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* ── Center Column ── */
+.banner-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ── Right Column ── */
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.hashtag {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #111;
+  text-align: right;
+  line-height: 1.4;
+}
+
+/* ── Footer ── */
+.banner-footer {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 900;
+  padding: 16px 30px 20px;
+  border-top: 2px solid #222;
+  color: #111;
+  letter-spacing: 0.04em;
+}
